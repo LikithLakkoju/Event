@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+        <!-- Adding tab icon -->
+        <link rel="shortcut icon" href="/img/" type="image/x-icon">
+    <!-- iconscout css link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+     <div class="forms">
+        <div class="form login">
+          <span class="title">New Event</span>
+         <form action="/signUpSubmit" method="GET">
+            <div class="input-field">
+                <h4 >Event Name :</h4>
+                <input type="text"  name="user_name" required> 
+             </div> 
+            <div class="input-field">
+                <h4 >Event Name :</h4>
+               <input type="date"   name="Email" required>
+
+            </div> 
+            <div class="input-field">
+                <h4 >Event Name :</h4>
+               <input type="time" class="password" placeholder="Password"   name="password" required>
+            </div> 
+            <div class="input-field">
+                <h4 >Event Name :</h4>
+                <input type="text" placeholder="Event Venue" name="user_name" required> 
+             </div> 
+             <div class="input-field">
+                <h4 >Event Name :</h4>
+               <textarea name="" id="" cols="55" rows="5" placeholder="   Event Details"></textarea>
+             </div> 
+             <p id="message"></p>
+            <div class="checkbox-text">
+               <div class="checkbox-content">
+                  <input type="checkbox"  id="logCheck" checked>
+                  <label for="logCheck" class="text">I accept all terms & conditions</label>
+               </div>
+            </div>
+               <div class="input-field button">
+                  <input type="submit" value="Add Event" >
+               </div> 
+            </form>
+        </div>
+     </div>
+   </div> 
+  
+</body>
+</html>

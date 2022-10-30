@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+        <!-- Adding tab icon -->
+        <link rel="shortcut icon" href="/img/" type="image/x-icon">
+    <!-- iconscout css link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="/css/signInUp.css">
+</head>
+<body>
+   <div class="container">
+     <div class="forms">
+        <div class="form login">
+          <span class="title">Registration</span>
+         <form action="/signUpSubmit" method="GET">
+            <div class="input-field">
+                <input type="text" placeholder="User Name" name="user_name" required>
+                <i class="uil uil-user"></i>
+             </div> 
+            <div class="input-field">
+               <input type="text"  placeholder="Email Address" name="Email" required>
+               <i class="uil uil-envelope"></i>
+            </div> 
+            <div class="input-field">
+               <input type="password" class="password" placeholder="Password" id="password"  name="password" required>
+               <i class="uil uil-lock icon"></i>
+            </div> 
+            <div class="input-field">
+                <input type="password" class="password"  placeholder="Confirm Password" name="cnfrmpassword" id="cnfrmpassword" required>
+                <i class="uil uil-lock icon"></i>
+                <i class="uil uil-eye-slash showHidePw"></i>
+             </div> 
+             <p id="message"></p>
+            <div class="checkbox-text">
+               <div class="checkbox-content">
+                  <input type="checkbox"  id="logCheck" checked>
+                  <label for="logCheck" class="text">I accept all terms & conditions</label>
+               </div>
+            </div>
+               <div class="input-field button">
+                  <input type="submit" value="Sign Up" onclick="checkPassword()">
+               </div> 
+         </form>
+         <div class="login-signup">
+            <span class="text"> Already have an account?
+              <a href="/signin"  class="text_signup-text">Login now</a>
+            </span>
+         </div>
+        </div>
+     </div>
+   </div> 
+   <script src="/js/signInUp.js"></script>
+</body>
+</html>
